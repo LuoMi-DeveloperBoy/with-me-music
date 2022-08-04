@@ -1,0 +1,42 @@
+<svg 
+    version="1.1"
+    baseProfile="full"
+    width="200" height="100"
+    xmlns="http://www.w3.org/2000/svg"
+>
+    <style>
+    </style>
+    <rect width="100%" height="100%" fill="transparent"/>
+
+    <defs>
+        <linearGradient id="logo-txt-color" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#f9b0c3;stop-opacity:1"/>
+            <stop offset="50%" style="stop-color:#f4828e;stop-opacity:1"/>
+            <stop offset="100%" style="stop-color:#f9b0c3;stop-opacity:1"/>
+        </linearGradient>
+
+        <radialGradient id="logo-bottom-img-color" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+            <stop offset="0%" style="stop-color:#fff9fb;stop-opacity:0"/>
+            <stop offset="100%" style="stop-color:#ffdce3;stop-opacity:1"/>
+        </radialGradient>
+    </defs>
+
+    <defs>
+        <filter id="circle-shadow" x="0" y="0" width="200%" height="200%">
+        <feOffset result="offOut" in="SourceGraphic" dx="20" 
+    dy="20" />
+        <feGaussianBlur result="blurOut" in="offOut" 
+    stdDeviation="10" />
+        <feBlend in="SourceGraphic" in2="blurOut" 
+    mode="normal" />
+        </filter>
+    </defs>
+   
+    <circle cx="34" cy="50" r="24" style="fill:url(#logo-bottom-img-color)" filter="url(#circle-shadow)" />
+
+    <text x="130" y="54" style="font-size:28;letter-spacing:2;font-family: Comic Sans MS;fill:url(#logo-txt-color)" text-anchor="middle">W♪th Me</text>
+    <text x="130" y="68" style="font-size:8;letter-spacing:4;stroke:#e93347; stroke-width: 0.5" text-anchor="middle" fill="#f3828e">和我一起听音乐吧</text>
+    
+    <!-- 音符 图层有层叠顺序 -->
+    <path d="m31.49118,66.90282c-2.85624,-0.34026 -4.39843,-3.52093 -1.54446,-4.68606c2.97519,-1.14884 4.74466,2.94098 1.49481,3.34073c-1.77952,0.4996 2.31042,1.33626 3.07271,0.49618c2.38189,-0.86399 2.01395,-3.1127 1.44088,-4.6964c-0.19888,-1.21327 -0.44759,-2.51218 -2.49024,-1.82264c-4.92807,0.29714 -8.82962,-3.44953 -8.43773,-6.95453c0.13305,-3.30599 3.74653,-5.57032 6.42223,-7.8661c-0.87844,-3.00345 -1.14367,-6.47325 1.40283,-9.09052c2.34563,-2.12756 3.53621,1.7657 3.93298,3.08678c0.88133,3.08803 -0.87597,6.33307 -3.8001,8.50987c0.27921,1.03254 0.55393,2.06578 0.83847,3.09751c3.09006,-0.4471 6.03967,1.50967 6.20821,3.80165c0.47746,2.0697 -1.29392,4.02426 -3.71345,4.91376c-0.03979,1.77727 1.27064,3.62084 0.79978,5.45613c-0.45218,1.89753 -3.29181,2.82802 -5.62693,2.41364l0,0zm3.22592,-8.09726c0.87547,-1.23156 -0.71251,-3.40658 -0.79969,-4.98744c0.03429,-2.75668 -3.86757,0.534 -2.70724,1.88774c0.34396,0.80104 3.32944,2.27002 0.58704,1.36404c-2.86314,-1.28419 -2.732,-4.58835 -0.11591,-5.98346c2.1948,-0.36433 0.8543,-2.55923 0.44075,-3.28017c-2.69569,1.84109 -5.75113,4.1594 -5.28623,7.13922c0.35019,2.79297 4.41303,4.48728 7.88129,3.86007l0,0zm1.81377,-0.53311c2.57105,-1.23693 2.48667,-4.48317 -0.32624,-5.49c-3.00139,-1.18852 -0.94563,1.9252 -0.89064,3.11039c0.41653,0.45371 0.18058,3.0974 1.21688,2.37961zm-3.16867,-14.88006c1.58152,-1.43377 3.38937,-3.50369 2.27867,-5.39933c-2.39187,-1.18323 -3.72105,2.0158 -3.77988,3.41658c-0.02176,0.9083 -0.20037,4.03905 1.5012,1.98275l0,0l0,0z" fill="#ffffff" id="svg_3" stroke="#ffaaaa" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="2"/>
+</svg>
