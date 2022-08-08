@@ -1,0 +1,17 @@
+name: git-sync
+
+on:
+  push:
+    branches: ["master"]
+
+jobs:
+  git-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: wei/git-sync@v3
+        with:
+          source_repo: "LuoMi-DeveloperBoy/with-me-music"
+          source_branch: "master"
+          destination_repo: "YiFeng-Developer/with-me-music"
+          destination_branch: "master"
+          ssh_private_key: ${{secrets.SSH_PRIVATE_KEY}}
